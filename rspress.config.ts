@@ -3,6 +3,7 @@ import { defineConfig } from '@rspress/core';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
+  base: '/ytb2bili-docs/',  // 添加这一行，注意前后都要有斜杠
   outDir: 'doc_build',  // 添加这一行
   title: 'My Site',
   icon: '/rspress-icon.png',
