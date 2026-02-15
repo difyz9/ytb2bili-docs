@@ -1,10 +1,12 @@
 import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
 
+
+
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  base: '/ytb2bili-docs/',  // 添加这一行，注意前后都要有斜杠
-  outDir: 'doc_build',  // 添加这一行
+  base: '/ytb2bili-docs/',  // ⚠️ 必须添加这一行
+  outDir: 'doc_build',
   title: 'My Site',
   icon: '/rspress-icon.png',
   logo: {
