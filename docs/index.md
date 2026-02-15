@@ -2,32 +2,36 @@
 pageType: home
 
 hero:
-  name: Rin
-  tagline: 基于 Cloudflare 的动态博客系统
+  name: My Site
+  text: A cool website!
+  tagline: This is the tagline
   actions:
     - theme: brand
       text: Quick Start
       link: /guide/
     - theme: alt
-      text: Github
-      link: https://github.com/openRin/Rin
+      text: GitHub
+      link: https://github.com/web-infra-dev/rspress
+  image:
+    src: /rspress-icon.png
+    alt: Logo
 features:
-  - title: 构建速度极快
-    details: 30秒构建与部署
-    icon: 🏃🏻
-  - title: Cloudflare
-    details: 基于 Cloudflare Workers + D1 + R2 + Pages
-    icon: ☁️
-  - title: 动态
-    details: 写作时无需构建，实时写作和编辑
-    icon: 🪶
-  - title: 健康检查
-    details: 每20分钟检查一次友链健康状态
-    icon: 🧐
-  - title: 标签
-    details: 自由使用标签进行文章分类
-    icon: 🏷️
-  - title: 国际化
-    details: 支持英语、简体中文和日语
-    icon: ✈️
+  - title: Blazing fast build speed
+    details: The core compilation module is based on the Rust front-end toolchain, providing a more ultimate development experience.
+    icon: 🏃🏻‍♀️
+  - title: Support for MDX content writing
+    details: MDX is a powerful way to write content, allowing you to use React components in Markdown.
+    icon: 📦
+  - title: Built-in full-text search
+    details: Automatically generates a full-text search index for you during construction, providing out-of-the-box full-text search capabilities.
+    icon: 🎨
+  - title: Simpler I18n solution
+    details: With the built-in I18n solution, you can easily provide multi-language support for documents or components.
+    icon: 🌍
+  - title: Static site generation
+    details: In production, it automatically builds into static HTML files, which can be easily deployed anywhere.
+    icon: 🌈
+  - title: Providing multiple custom capabilities
+    details: Through its extension mechanism, you can easily extend theme UI and build process.
+    icon: 🔥
 ---
