@@ -7,8 +7,10 @@
 node_modules
 dist/
 doc_build/
+.vercel
 
 # IDE
 .vscode/*
 !.vscode/extensions.json
 .idea
+.env*
