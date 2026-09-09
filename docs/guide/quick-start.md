@@ -26,15 +26,6 @@ ytb --version       # 验证安装
 brew upgrade ytb    # 后续升级
 ```
 
-### 方式二：源码编译
-
-```bash
-git clone https://github.com/zolagz/ytb2bili-go.git
-cd ytb2bili-go
-
-make build             # 产出 ./ytb（等价 go build -o ytb ./cmd/ytb）
-make install           # 安装到 ~/.local/bin/ytb
-```
 
 ### 环境自检
 
