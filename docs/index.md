@@ -14,7 +14,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: GitHub
-      link: https://github.com/zolagz/ytb2bili-go
+      link: https://github.com/difyz9/ytb2bili-cli
 features:
   - title: 🎬 全流水线
     details: 搜索 → 下载 → 转录 → 翻译 → TTS 配音 → 音画同步 → AI 元数据 → 投稿 → 审核通过自动上传字幕，产物幂等续跑
