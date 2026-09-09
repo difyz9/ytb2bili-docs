@@ -4,7 +4,7 @@
 
 | 依赖 | 用途 | 说明 |
 |------|------|------|
-| Go ≥ 1.26 | 编译 | <https://go.dev> |
+| Go ≥ 1.26 | 源码编译 | <https://go.dev>，仅从源码构建时需要；Homebrew 安装无需 |
 | yt-dlp | 视频下载 | 缺失时自动安装到 `~/.local/bin`（无需 sudo）；`ytb init --update` 可更新 |
 | ffmpeg | 音视频处理 | `brew install ffmpeg` / `apt install ffmpeg` |
 | deno | yt-dlp JS 运行时 | `brew install deno`（可选） |
@@ -12,7 +12,21 @@
 | Python 3 + venv | 配音/音画同步脚本 | `ytb init --venv` 一键创建 |
 | IndexTTS2 服务 | 中文配音（可选） | `tts.provider: index` 时需另部署，见 `skills/audio-video-sync/SKILL.md` |
 
-## 2. 编译与检查
+## 2. 安装与检查
+
+### 方式一：Homebrew（推荐）
+
+适用于 macOS 和 Linux（amd64 / arm64），无需 Go 环境：
+
+```bash
+brew tap difyz9/tap
+brew install ytb
+
+ytb --version       # 验证安装
+brew upgrade ytb    # 后续升级
+```
+
+### 方式二：源码编译
 
 ```bash
 git clone https://github.com/zolagz/ytb2bili-go.git
@@ -20,7 +34,13 @@ cd ytb2bili-go
 
 make build             # 产出 ./ytb（等价 go build -o ytb ./cmd/ytb）
 make install           # 安装到 ~/.local/bin/ytb
+```
 
+### 环境自检
+
+安装完成后（两种方式相同）：
+
+```bash
 ytb init               # 逐项检查环境依赖（yt-dlp/ffmpeg/deno/whisper/Python）
 ytb init --update      # 同时把 yt-dlp 更新到最新版
 ytb init --pip         # 自动安装 Python 依赖（requests）
